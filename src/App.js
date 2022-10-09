@@ -6,25 +6,24 @@ import Slider from "./components/Slider"
 import sad from "./Assets/sad.jpeg";
 import deserttour from "./Assets/deserttour.jpg";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+
+
 
 
 function App() {
-  const navbarLinks = [
-    { url: "#", title: "Home" },
-    { url: "#", title: "Trips" },
-    { url: "#", title: "Rewards" },
-  ];
+  
   return (
     <div className="App">
-      <Navbar navbarLinks={navbarLinks} />
-        <Hero imageSrc={sad} />
+      <Navbar/>
+      <Hero imageSrc={sad} />
+    
       <Slider
         imageSrc={amazon}
-        title={"Become an explorer."}
+        title={" Want to Become an explorer?"}
         subtitle={
-          "Our platform offers a wide variety of unique travel locations!"
+          "Our platform offers a wide variety of unique tropical rainforests locations!"
         }
+        
       />
       <Slider
         imageSrc={deserttour}
@@ -32,7 +31,7 @@ function App() {
         subtitle={"Your dream Vacay is our calling"}
         flipped={true}      
       />
-     <Footer/>
+     
     </div>
     
   );

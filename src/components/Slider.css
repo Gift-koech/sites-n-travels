@@ -1,8 +1,8 @@
 .slider {
     display: flex;
     align-items: center;
-    margin: 20px;
-
+    margin-top: 0;
+background-color: rgb(135, 135, 135);
     opacity: 0;
     transform: scale(85%);
     transition: 2s;

@@ -1,3 +1,4 @@
+import "./App.css"
 import React from "react";
 import amazon from "./Assets/amazon.jpg";
 import Hero from "./components/Hero";

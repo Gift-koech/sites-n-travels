@@ -5,11 +5,12 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        S
+        Thrills n Travels
       </Link>
       <ul>
-        <CustomLink to="/pricing">Pricing</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
+              <CustomLink to="/Prices">Pricing</CustomLink>
+               <CustomLink to="/Trips">Trips</CustomLink>
+                
       </ul>
     </nav>
   )

@@ -6,6 +6,7 @@ import Slider from "./components/Slider"
 import sad from "./Assets/sad.jpeg";
 import deserttour from "./Assets/deserttour.jpg";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 
@@ -14,7 +15,8 @@ function App() {
   
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
+      
       <Hero imageSrc={sad} />
     
       <Slider
@@ -31,7 +33,7 @@ function App() {
         subtitle={"Your dream Vacay is our calling"}
         flipped={true}      
       />
-     
+    <Footer/> 
     </div>
     
   );

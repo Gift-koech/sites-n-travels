@@ -7,7 +7,7 @@ const Navbar = ({ navbarLinks }) => {
   const [menuClicked, setMenuClicked] = useState(false);
 
   const toggleMenuClick = () => {
-    setMenuClicked(!);
+    setMenuClicked(!menuClicked);
   };
 
   return (

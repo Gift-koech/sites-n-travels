@@ -5,12 +5,19 @@ import Hero from "./components/Hero";
 import Slider from "./components/Slider"
 import sad from "./Assets/sad.jpeg";
 import deserttour from "./Assets/deserttour.jpg";
+import Navbar from "./components/Navbar";
 
 
 function App() {
+  const navbarLinks = [
+    { url: "#", title: "Home" },
+    { url: "#", title: "Trips" },
+    { url: "#", title: "Rewards" },
+  ];
   return (
-    <div>
-      <Hero imageSrc={sad} />
+    <div className="App">
+      <Navbar navbarLinks={navbarLinks} />
+        <Hero imageSrc={sad} />
       <Slider
         imageSrc={amazon}
         title={"Become an explorer."}
@@ -24,8 +31,9 @@ function App() {
         subtitle={"Your dream Vacay is our calling"}
         flipped={true}      
       />
-      
+     
     </div>
+    
   );
    
   }

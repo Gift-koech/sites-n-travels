@@ -6,6 +6,7 @@ import Slider from "./components/Slider"
 import sad from "./Assets/sad.jpeg";
 import deserttour from "./Assets/deserttour.jpg";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
         subtitle={"Your dream Vacay is our calling"}
         flipped={true}      
       />
-     
+     <Footer/>
     </div>
     
   );

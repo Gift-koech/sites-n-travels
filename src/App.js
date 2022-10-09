@@ -3,7 +3,7 @@ import amazon from "./Assets/amazon.jpg";
 import Hero from "./components/Hero";
 import Slider from "./components/Slider"
 import sad from "./Assets/sad.jpeg";
-import deserttours from "./Assets/deserttours";
+import deserttour from "./Assets/deserttour.jpg";
 
 
 function App() {
@@ -18,9 +18,10 @@ function App() {
         }
       />
       <Slider
-        imageSrc={deserttours}
-        
-      
+        imageSrc={deserttour}
+        title={"Create eternal memories with loved ones"}
+        subtitle={"Your dream Vacay is our calling"}
+        flipped={true}      
       />
       
     </div>

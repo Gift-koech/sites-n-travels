@@ -51,10 +51,11 @@ function Footer() {
               type='email'
               placeholder='Your Email'
               onChange={checkEmail}
+              onClick ={submit}
        
             />
             <p className='text-succes'>{ Msg}</p>
-            <Button buttonStyle='btn--outline'onClick={submit} >Subscribe</Button>
+            <Button buttonStyle='btn--outline'>Subscribe</Button>
             
           </form>
         </div>

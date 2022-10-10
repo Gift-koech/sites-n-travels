@@ -9,6 +9,7 @@
 }
 .errormessage{
     color: red;
+    padding-bottom: 5px;
 }
 .footer-subscription {
     display: flex;
@@ -42,8 +43,9 @@
     width: 100%;
     font-size: 1rem;
     height: 3rem;
-    color: whitesmoke;
+    color: rgb(16, 13, 13);
     margin-bottom: 1rem;
+    border-radius: 15px;
 }
 
 .website-rights {

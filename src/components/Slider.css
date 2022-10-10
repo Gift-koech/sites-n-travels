@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     margin-top: 0;
-background-color: rgb(135, 135, 135);
+    background-color: rgb(135, 135, 135);
     opacity: 0;
     transform: scale(85%);
     transition: 2s;
@@ -26,6 +26,7 @@ background-color: rgb(135, 135, 135);
     align-items: center;
     padding: 20px;
     text-align: center;
+    font-size: large;
 }
 
 .slider__title {
@@ -39,6 +40,6 @@ background-color: rgb(135, 135, 135);
     }
 
     .slider__image {
-        width: 100%;
+        width: 80%;
     }
 }

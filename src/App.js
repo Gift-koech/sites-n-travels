@@ -3,10 +3,12 @@ import React from "react";
 import amazon from "./Assets/amazon.jpg";
 import Hero from "./components/Hero";
 import Slider from "./components/Slider"
-import sad from "./Assets/sad.jpeg";
+import spacetour from "./Assets/spacetour.jpg";
 import deserttour from "./Assets/deserttour.jpg";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import marineholiday from "./Assets/marineholiday.jpg"
+
 
 
 
@@ -16,8 +18,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      
-      <Hero imageSrc={sad} />
+      <Hero imageSrc={spacetour} />
     
       <Slider
         imageSrc={amazon}
@@ -32,6 +33,12 @@ function App() {
         title={"Create eternal memories with loved ones"}
         subtitle={"Your dream Vacay is our calling"}
         flipped={true}      
+      />
+       <Slider
+        imageSrc={marineholiday}
+        title={"Create eternal memories with loved ones"}
+        subtitle={"Your dream Vacay is our calling"}
+            
       />
     <Footer/> 
     </div>

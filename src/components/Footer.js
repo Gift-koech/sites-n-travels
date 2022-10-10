@@ -51,7 +51,7 @@ function Footer() {
               <i class='fab fa-typo3' />
             </Link>
           </div>
-            <small class='website-rights'>Doomanji.org
+            <small class='website-rights'>Travel.org
               ©2022</small>
           <div class='social-icons'>
             <Link

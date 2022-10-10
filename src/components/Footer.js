@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Footer.css'
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
 
 function Footer() {
+  const regex =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0 -9-]+(?:\.[a-zA-Z0-9-]+)*$/
+  const[email, setEmail] = useState('');
+  const [error, setError] = useState('');
+  const checkEmail = (e) => {
+    setEmail(e.target.value);
+    if (regex.test(email) === false) {
+      setError('Please enter valid email address');
+    } else {
+      setError('');
+      return true;
+    }
+  
+  }
+  const submit = () => {
+    alert('clicked');
+  }
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
@@ -14,14 +30,18 @@ function Footer() {
         <p className='footer-subscription-text'>
           You can unsubscribe at any time fam.
         </p>
+
         <div className='input-areas'>
           <form>
+            <p className='errormessage'>{ error}</p>
             <input
               className='footer-input'
               name='email'
               type='email'
               placeholder='Your Email'
+              onChange={checkEmail}
             />
+            
             <Button buttonStyle='btn--outline'>Subscribe</Button>
           </form>
         </div>
@@ -43,21 +63,12 @@ function Footer() {
           </div>
         </div>
       </div>
-      <section class='social-media'>
-        <div class='social-media-wrap'>
-          <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
-     
-              <i class='fab fa-typo3' />
-            </Link>
+      
           </div>
             <small class='website-rights'>Travel.org
               ©2022</small>
          
-        </div>
-      </section>
     </div>
-   </div>
   );
 }
 

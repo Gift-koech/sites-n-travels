@@ -1,13 +1,15 @@
 .footer-container {
 
-    padding: 4rem 0 2rem 0;
+    padding: 1rem 0 2rem 0;
     display: flex;
     background-color: rgb(130, 124, 124);
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+.errormessage{
+    color: red;
+}
 .footer-subscription {
     display: flex;
     flex-direction: column;

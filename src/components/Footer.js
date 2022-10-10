@@ -5,9 +5,14 @@ import { Link } from 'react-router-dom';
 
 
 function Footer() {
-  const regex =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0 -9-]+(?:\.[a-zA-Z0-9-]+)*$/
-  const[email, setEmail] = useState('');
+  const regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0 -9-]+(?:\.[a-zA-Z0-9-]+)*$/
+  
+  const [email, setEmail] = useState('');
+  
   const [error, setError] = useState('');
+
+  const [Msg, setMsg] = useState('');
+
   const checkEmail = (e) => {
     setEmail(e.target.value);
     if (regex.test(email) === false) {
@@ -16,11 +21,17 @@ function Footer() {
       setError('');
       return true;
     }
-  
   }
+
+
   const submit = () => {
-    alert('clicked');
+    if(email = '') {
+      setMsg('Thank you for subscribing' + email);
+    } else {
+      setError('Email cant be blank')
+    }
   }
+
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
@@ -40,9 +51,11 @@ function Footer() {
               type='email'
               placeholder='Your Email'
               onChange={checkEmail}
+       
             />
+            <p className='text-succes'>{ Msg}</p>
+            <Button buttonStyle='btn--outline'onClick={submit} >Subscribe</Button>
             
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
           </form>
         </div>
       </section>

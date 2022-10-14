@@ -1,5 +1,6 @@
-{
+{ 
   "dependencies": {
+    "homepage": "http://{Gift-koech}.github.io/{sites-n-travels}",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,13 +15,16 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "gh-pages":"4.0.0"
   },
   "browserslist": {
     "production": [

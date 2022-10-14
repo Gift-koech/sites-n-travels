@@ -36,8 +36,8 @@ function App() {
       />
        <Slider
         imageSrc={marineholiday}
-        title={"Create eternal memories with loved ones"}
-        subtitle={"Your dream Vacay is our calling"}
+        title={"relax and enjoy the serene vacay spots "}
+        subtitle={"Your  Vacay awaits."}
             
       />
     <Footer/> 
